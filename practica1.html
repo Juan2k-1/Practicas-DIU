@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        h1 {
+            color: darkred;
+            text-align: center;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .miParrafo {
+            text-align: center;
+            font-size: 34px;
+            color: darkred;
+            text-decoration: none;
+            font-family: Arial, sans-serif
+        }
+
+        header {
+            background-color: darkred;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+        }
+
+        menuNavegacion {
+            float: left;
+        }
+
+            menuNavegacion ul {
+                list-style: none;
+                overflow: hidden;
+            }
+
+                menuNavegacion ul li {
+                    float: left;
+                    font-family: Arial, sans-serif;
+                    font-size: 36px;
+                }
+
+                    menuNavegacion ul li a {
+                        display: block;
+                        padding: 7px;
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    menuNavegacion ul li:hover {
+                        background-color: indianred;
+                    }
+
+        .slider {
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+            .slider ul {
+                display: flex;
+                padding: 0;
+                width: 400%;
+                animation: cambio 20s infinite alternate linear;
+            }
+
+            .slider li {
+                width: 100%;
+                list-style: none;
+            }
+
+            .slider img {
+                width: 100%;
+            }
+
+        @keyframes cambio {
+            0% {
+                margin-left: 0;
+            }
+
+            20% {
+                margin-left: 0;
+            }
+
+            25% {
+                margin-left: -100%;
+            }
+
+            45% {
+                margin-left: -100%;
+            }
+
+            50% {
+                margin-left: -200%;
+            }
+
+            70% {
+                margin-left: -200%;
+            }
+
+            75% {
+                margin-left: -300%;
+            }
+
+            100% {
+                margin-left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <menuNavegacion>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Viajes</a></li>
+                <li><a href="#">Galería de imágenes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </menuNavegacion>
+    </header>
+
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="viajes-para-personas-mayores.jpg" alt="">
+            </li>
+            <li>
+                <img src="playa-de-figueiras-islas-cies.jpeg" alt="">
+            </li>
+            <li>
+                <img src="nueva-york-manhattan-maravillas-desde-mi-pantalla-t.jpg" alt="">
+            </li>
+            <li>
+                <img src="viajes-para-personas-mayores.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <div class="miParrafo">
+        <p><strong>Bienvenido a la agencia de viajes Buena Vida, intentaremos hacer de su viaje una experiencia inolvidable</strong></p>
+        <p>¡Gracias por su visita!</p>
+    </div>
+    
+
+</body>
+</html>

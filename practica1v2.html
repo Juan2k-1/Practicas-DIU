@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .centrado {
+            text-align: center;
+            color: darkred;
+        }
+
+        .datos {
+            color: darkred;
+            font-size: 1.6em;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 1em;
+        }
+
+        fieldset {
+            margin: 1em auto;
+            background-color: white;
+            border: black 3px solid;
+        }
+
+        .boton {
+            color: darkred;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.6em;
+            padding: 0.5em;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1.4em;
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="centrado"><strong>Formulario de registro</strong></h1>
+    <form>
+        <fieldset>
+            <legend class="datos"><strong>DATOS PERSONALES</strong></legend>
+            <p>
+                <label for="name"><strong>Nombre y apellidos</strong></label>
+                <input type="text" id="name" name="nombre y apellidos" />
+            </p>
+
+            <p>
+                <label for="email"><strong>Correo electrónico</strong></label>
+                <input type="email" id="email" name="correo electrónico" />
+            </p>
+
+            <p>
+                <label for="birthday"><strong>Fecha de nacimiento</strong></label>
+                <input type="date" id="birthday" name="fecha de nacimiento" />
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend class="datos"><strong>DATOS DE ACCESO</strong></legend>
+            <p>
+                <label for="user"><strong>Nombre de usuario</strong></label>
+                <input type="text" id="user" name="usuario" />
+            </p>
+
+            <p>
+                <label for="password"><strong>Contraseña</strong></label>
+                <input type="password" id="password" name="contraseña" />
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend class="datos"><strong>CONDICIONES DE REGISTRO</strong></legend>
+            <p><strong>Deseo recibir ofertas</strong></p>
+
+            <input type="radio" id="radio" name="radio" />
+            <label>Semanalmente</label>
+            <input type="radio" id="radio" name="radio" />
+            <label>Mensualmente</label>
+            <input type="radio" id="radio" name="radio" />
+            <label>Nunca</label>
+            <p>
+                <input type="checkbox" id="checkbox" name="check" />
+                <label for="checkbox"><strong>Acepto el acuerdo de servicios</strong></label>
+            </p>
+        </fieldset>
+        <input class="boton" type="submit" value="Crear Cuenta" id="botonCrear" />
+    </form>
+</body>
+</html>
